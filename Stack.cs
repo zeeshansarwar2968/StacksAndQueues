@@ -22,6 +22,8 @@ namespace StacksAndQueues
             this.top = newNode;
             Console.WriteLine("New Node {0} is added ", newNode.data);
         }
+
+        //Method to display all the nodes in a stack
         public void Display()
         {
             Node temp = this.top;

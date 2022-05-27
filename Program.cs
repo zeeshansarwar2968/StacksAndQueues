@@ -7,10 +7,12 @@ namespace StacksAndQueues
         static void Main(string[] args)
         {
             Console.WriteLine("\t\t\t\t\tData Structures : Stacks and Queues");
-
+            Console.WriteLine();
             Console.WriteLine("-------------Stack Operations-------------");
+            //Console.WriteLine("0. Exit");
             Console.WriteLine("1.Push operation");
-            Console.WriteLine("Enter the option");
+            Console.WriteLine("------------------------------------------");
+            Console.Write("Enter the option : ");
             int num = Convert.ToInt32(Console.ReadLine());
             Stack stack = new Stack();
             switch (num)
@@ -25,7 +27,7 @@ namespace StacksAndQueues
                     Console.WriteLine("Enter a valid option");
                     break;
             }
-            Console.ReadLine();
+            //Console.ReadLine();
             Console.ReadKey();
         }
     }
