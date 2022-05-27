@@ -11,6 +11,7 @@ namespace StacksAndQueues
             Console.WriteLine("-------------Stack Operations-------------");
             //Console.WriteLine("0. Exit");
             Console.WriteLine("1.Push operation");
+            Console.WriteLine("2.Pop and Peek operation");
             Console.WriteLine("------------------------------------------");
             Console.Write("Enter the option : ");
             int num = Convert.ToInt32(Console.ReadLine());
@@ -21,6 +22,13 @@ namespace StacksAndQueues
                     stack.Push(70);
                     stack.Push(30);
                     stack.Push(56);
+                    stack.Display();
+                    break;
+                case 2:
+                    stack.Push(70);
+                    stack.Push(30);
+                    stack.Push(56);
+                    stack.Pop();
                     stack.Display();
                     break;
                 default:

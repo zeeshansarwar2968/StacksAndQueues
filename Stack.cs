@@ -23,18 +23,41 @@ namespace StacksAndQueues
             Console.WriteLine("New Node {0} is added ", newNode.data);
         }
 
+        //Peek method gives the top most element in stack without removing the element.
+        public void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("No elements present in the stack");
+                return;
+            }
+            Console.WriteLine("The element after peeking is : " + this.top.data);
+        }
+
+        //Pop Method-Removes the top most element
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("No elements present in the stack");
+                return;
+            }
+            Peek();
+            this.top = this.top.next;
+        }
+
         //Method to display all the nodes in a stack
         public void Display()
         {
             Node temp = this.top;
             if (temp == null)
             {
-                Console.WriteLine("No values to be added");
+                Console.WriteLine("No values have been added");
                 return;
             }
             while (temp != null)
             {
-                Console.WriteLine("Value in te stack " + temp.data);
+                Console.WriteLine("Value in the stack is : " + temp.data);
                 temp = temp.next;
             }
         }
